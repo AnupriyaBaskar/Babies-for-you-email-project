@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>B4U REGISTRATION</title>
+        {% load static %}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <style>
+           
+
+            .card{
+                padding-left: 30px;
+                margin-top: 70px;
+                background-image: linear-gradient(rgb(22, 137, 214),rgb(219, 80, 103));
+                box-shadow: 3px 3px 10px rgb(213, 225, 233);
+                
+                
+            }
+
+            h3{
+                padding-top: 60px;
+                
+            }
+
+            .card-body{
+                padding: 30px;
+                opacity: 75%;
+               
+                
+            }
+
+            form{
+                padding-top: 60px;
+            }
+
+            body{
+                background-image: url("{% static 'images/bg8.png' %}");
+                background-repeat: repeat;
+                background-size: cover;
+            }
+            
+
+
+        </style>
+    </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+    <body>
+
+        <header>
+            {% csrf_token %}
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-end" style="background-color: #2e303e;">
+                <div class="container"> 
+                    
+                    <a href="/" class="navbar-brand" style="font-size: 30px; font-weight: bold; font-family: 'Times New Roman', Times, serif;">
+                         Babies 4 you</a>
+
+                         <div class="navbar-collapse justify-content-end">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a class="nav-link">HOME</a>
+                
+                                </li>
+                                
+                                <li>
+                
+                                    <a href="http://127.0.0.1:8000/aboutus" class="nav-link">ABOUT US</a>
+                
+                                </li>
+                                <li>
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#popup" class="nav-link">REGISTER</a>
+                
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:8000/success " class="nav-link active">LOGIN</a>
+                                </li>
+                            </ul>
+                
+                        </div>
+
+                    
+        </header>
+
+        <!-- <div id="video2">
+            <video autoplay loop muted >
+                <source src="{% static 'images/post7.mp4' %}" type="video/mp4">
+            </video>
+        </div> -->
+        
+        <form method="post" action=" " autocomplete="off">
+            {% csrf_token%}
+            <div class="container col-4">
+
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <div class="form-group col-9">
+                            <label>Email id</label>
+                            <input type="email" class="form-control" name="email" required placeholder="Email">
+                        </div>
+                        <div class="form-group col-9">
+                            <label>Password</label>
+                            <input type="password" class="form-control" name="password" required placeholder="Password">
+                            <small class="form-text text-muted">Must be 8-20 characters long</small>
+                        </div>
+                       
+                        <div style="padding-left: 100px; padding-top: 25px;">
+                            <input type="submit" value="login" class="btn btn-primary">
+                        </div>
+                        <div class="form-group" style="padding-left: 75px;">
+                            <a href="/"><label>Forgot password?</label></a>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+
+        </form>
+    </body>
+
+
+</html>

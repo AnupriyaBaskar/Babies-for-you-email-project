@@ -1,0 +1,142 @@
+#padding{
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-left: 50px;
+   
+
+
+}
+
+.container .p{
+
+    color: rgb(17, 17, 17);
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-top: 60px;
+    background-color: rgba(206, 199, 199, 0.356);
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 50px;
+    
+}
+
+
+.container .p:hover{
+
+    background-color: rgb(52, 117, 160);
+}
+
+
+
+.card{
+  
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left:200px;
+    margin-bottom: 200px;
+    padding-right: 15px;
+    border-radius: 20px;
+
+    
+    
+}
+
+
+#op{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(64, 155, 197);
+    border-color: black;
+    opacity: 75%;
+    padding-left: 500px;
+    padding-bottom: 100px;
+}
+  
+
+
+.column{
+    color: white;
+    margin-left: 0;
+    background-color: black;
+   
+    padding-left: 20px;
+    padding-right: 100px;
+    width: 500px;
+   
+
+    
+}
+
+.sec1{
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.sec2{
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(136, 26, 26); */
+    
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    color: rgb(20, 20, 20);
+    font-size: 50px;
+}
+
+.car{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.container{
+
+    display: flex;
+    float: left;
+   
+
+}
+
+
+
+footer{
+
+    width: 100%;
+    height: 300px;
+    color: white;
+
+
+    
+    
+}
+
+footer .social-icons{
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.babies{
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+}
+
+
+
+
